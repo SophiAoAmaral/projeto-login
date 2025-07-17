@@ -39,7 +39,7 @@ div#formulario >p{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
     overflow: hidden;
 
     background-color: white;
@@ -50,6 +50,7 @@ div#formulario >p{
 
     transition: width 0.2s, height 0.2s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 
 }
 
@@ -80,16 +81,34 @@ form >input[type=submit]:hover{
 }
 .campo{
     background-color: var(--lilais);
+    border: 2px solid #5f2c82 ;
     width: 100%;
     display: block;
     height: 40px;
     border-radius: 5px;
     margin: 5px 0px;
 }
-.campo label{
+ label{
     display: none;
 }
-
+.campo span{
+    color: white;
+    
+    font-size: 2em;
+    width: 40px;
+    padding: 8px;
+    
+}
+.campo input{
+    background-color: #a6e6e2;
+    font-size: 1em;
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    width: calc(100% - 45px);
+    transform: translateY(-15px);
+}
 .botao{
     display: block;/*torna um bloco q ocupa uma linha toda*/
     text-align: center;
